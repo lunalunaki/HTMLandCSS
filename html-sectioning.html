@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sectioning</title>
+	<meta name="description" content="Tech-Foundry HTML CSS JavaScript Demonstration">
+	<meta name="keywords" content="tech-foundry, it school, html, css,javascript">
+	<link rel="stylesheet" type="text/css" href="css/template.css" media="screen">
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<script type="text/javascript" src="js/script.js"></script>
+</head>
+<body>
+<div id="wrapper"><div id="sheet">
+<div id="header">
+	<div id="logo"></div>
+	<h1 class="headline"><a href="index.html">HTML CSS JAVASCRIPT DEMONSTRATION</a></div>
+	
+	<div class="nav"><ul class="hmenu"><li><a href="index.html">home</a></li></ul></div>
+	<div class="clear"></div>
+	<!-- title content -->
+	<div id="title-content">
+	<h1>Sectioning</h1>
+	
+	<h4>While headings do a grand, perfectly valid, job in defining the start of a new section or sub-section in a document, there are a number of elements that can be exploited to establish a cleaner, clearer semantic structure.</h4>
+	<p>Whereas div elements can be used to contain sections, used primarily as scaffolding on which to hang CSS, they don’t hold a great deal of meaning. Sectioning involves a handful of tags that can be used to define specific parts of a page, such as articles, headers, footers, and navigation.</p>
+	<h4>For this basic class we will be using div tags and styling them with ids and classes to create headers, footers, navigation, and content holders. </h4>
+	</div>
+	<!-- end title content -->
+	<div class="clear"></div>
+	<div id="main-content">
+	<!-- main content -->
+
+	
+<h2>Headers and Footers</h2>
+<p>header and footer provide further specialized sections:</p>
+<pre class=" language-html"><code class="oldLang  language-html">
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div class="wrapper"</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation"></span></span><strong><span class="token tag"><span class="token punctuation">&lt;</span>div class="header"</span><span class="token punctuation">&gt;</span></strong><span class="token punctuation"></span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h1</span><span class="token punctuation">&gt;</span></span>Alternatively<span class="token entity" title="…">&amp;hellip;</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h1</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span>[An introduction]<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation"></span></span><strong><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></strong><span class="token punctuation"></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div class="section"</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>main_content<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span>[Content]<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation"></span></span><strong><span class="token tag"><span class="token punctuation">&lt;</span>div class="content"</span><span class="token punctuation">&gt;</span></strong><span class="token punctuation"></span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span>[End notes]<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation"></span></span><strong><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></strong><span class="token punctuation"></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation"></span></span><strong><span class="token tag"><span class="token punctuation">&lt;</span>div class="footer"</span><span class="token punctuation">&gt;</span></strong><span class="token punctuation"></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span>[Copyright bumf]<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation"></span></span><strong><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></strong><span class="token punctuation"></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">&gt;</span></span>
+</code></pre>
+<p>The footer is the footer of the section in which it is contained. So, in the above example, the footer is the footer of the page.</p>	
+	
+<h2>Content Div</h2>
+<p>Use a <b>div</b> tag with an id or class of  main-content to style the main body of the web site content eg. &lt;div class="main-content"></div>.</p>	
+<p>Recently, <b>&lt;main></b> was formally added to the W3C HTML specification. Now that the dust has settled, it’s about time we dive in to find out where and when it’s appropriate to use <b>&lt;main></b>. Let’s get started.</p>
+	
+	
+<h2>Navigation</h2>
+<p>There’s div with a class of "nav" used to mark up a group of navigation links:</p>
+
+<pre class=" language-html"><code class="oldLang  language-html">
+<span class="token tag"><span class="token tag"><span class="token punctuation"></span></span><strong><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>main_nav<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></strong><span class="token punctuation"></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ul</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>/tutorials/<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Tutorials<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>/techniques/<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Techniques<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>/examples/<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Examples<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>/references/<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>References<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ul</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation"></span></span><strong><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></strong><span class="token punctuation"></span></span>
+</code></pre>
+
+
+
+	
+<div class="clear"></div>
+<hr>
+	<h4>Related pages</h4>
+  <ul>
+  <li>Next page: <a href="html-paragraphs.html">Paragraphs</a></li>
+  <li>Previous page: <a href="html-span.html">Span & Div</a></li>
+  </ul>
+
+	<!-- end main content -->
+</div>
+<div class="clear"></div>
+<div id="footer"><div id="footer-info"><p>Copyright 2017 Tech-Foundry. All rights reserved.</p></div></div>
+</div></div>
+</body>
+</html>

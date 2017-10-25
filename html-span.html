@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Span and Div</title>
+	<meta name="description" content="Tech-Foundry HTML CSS JavaScript Demonstration">
+	<meta name="keywords" content="tech-foundry, it school, html, css,javascript">
+	<link rel="stylesheet" type="text/css" href="css/template.css" media="screen">
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<script type="text/javascript" src="js/script.js"></script>
+</head>
+<body>
+<div id="wrapper"><div id="sheet">
+<div id="header">
+	<div id="logo"></div>
+	<h1 class="headline"><a href="index.html">HTML CSS JAVASCRIPT DEMONSTRATION</a></div>
+	
+	<div class="nav"><ul class="hmenu"><li><a href="index.html">home</a></li></ul></div>
+	<div class="clear"></div>
+	<!-- title content -->
+	<div id="title-content">
+	<h1>Span and Div</h1>
+	<h4>HTML is all about applying meaning to content. Whereas most HTML tags apply meaning (p makes a paragraph, h1 makes a heading etc.), the span and div tags apply no meaning at all. This might sound about as useful as a foam hammer but they are actually used quite extensively in conjunction with CSS.</h4>
+	<h4>They are used to group together a chunk of HTML and hook some information onto that chunk, most commonly with the attributes class and id to associate the element with a class or id CSS selector.</h4>
+	</div>
+	<!-- end title content -->
+	<div class="clear"></div>
+	<div id="main-content">
+	<!-- main content -->
+
+<p>The difference between span and div is that a span element is in-line and usually used for a small chunk of HTML inside a line (such as inside a paragraph) whereas a div (division) element is block-line (which is basically equivalent to having a line-break before and after it) and used to group larger chunks of code.</p>
+
+<<pre class=" language-html"><code class="oldLang  language-html">
+<span class="red1"><span class="red1"><span class="blue1">&lt;</span>div</span> <span class="blue2">id</span><span class="blue2"><span class="blue1">=</span><span class="blue1">"</span>scissors<span class="blue1">"</span></span><span class="blue1">&gt;</span></span>
+    <span class="red1"><span class="red1"><span class="blue1">&lt;</span>p</span><span class="blue1">&gt;</span></span>This is<span class="red1"><span class="red1"><span class="blue1">&lt;</span>span</span> <span class="blue2">class</span><span class="blue2"><span class="blue1">=</span><span class="blue1">"</span>paper<span class="blue1">"</span></span><span class="blue1">&gt;</span></span>crazy<span class="red1"><span class="red1"><span class="blue1">&lt;/</span>span</span><span class="blue1">&gt;</span></span><span class="red1"><span class="red1"><span class="blue1">&lt;/</span>p</span><span class="blue1">&gt;</span></span>
+<span class="red1"><span class="red1"><span class="blue1">&lt;/</span>div</span><span class="blue1">&gt;</span></span>
+</code></pre>
+
+<p>div, and especially span, shouldn’t actually be used that often. Whenever there is a sensible alternative that should be used instead. For example, if you want to emphasize the word “crazy” and the class “paper” is adding italics for visual emphasis, then, for richer, more meaningful content, the code might look like this:</p>
+<pre class=" language-html"><code class="oldLang  language-html">
+<span class="red1"><span class="red1"><span class="blue1">&lt;</span>div</span> <span class="blue2">id</span><span class="blue2"><span class="blue1">=</span><span class="blue1">"</span>scissors<span class="blue1">"</span></span><span class="blue1">&gt;</span></span>
+    <span class="red1"><span class="red1"><span class="blue1">&lt;</span>p</span><span class="blue1">&gt;</span></span>This is <span class="red1"><span class="red1"><span class="blue1"></span></span><strong><span class="red1"><span class="blue1">&lt;</span>em</span> <span class="blue2">class</span><span class="blue2"><span class="blue1">=</span><span class="blue1">"</span>paper<span class="blue1">"</span></span><span class="blue1">&gt;</span></strong><span class="blue1"></span></span>crazy<span class="red1"><span class="red1"><span class="blue1"></span></span><strong><span class="red1"><span class="blue1">&lt;/</span>em</span><span class="blue1">&gt;</span></strong><span class="blue1"></span></span><span class="red1"><span class="red1"><span class="blue1">&lt;/</span>p</span><span class="blue1">&gt;</span></span>
+<span class="red1"><span class="red1"><span class="blue1">&lt;/</span>div</span><span class="blue1">&gt;</span></span>
+</code></pre>
+<p>If you haven’t got a clue about classes and ID’s yet, don’t worry, they’re all explained later on in this class. All you need to remember is that span and div are “meaningless” tags.</p>
+<div class="clear"></div>
+<hr>
+	<h4>Related pages</h4>
+  <ul>
+  <li>Next page: <a href="html-sectioning.html">Sectioning</a></li>
+  <li>Previous page: <a href="html-titles.html">Page Titles</a></li>
+  </ul>
+
+	<!-- end main content -->
+</div>
+<div class="clear"></div>
+<div id="footer"><div id="footer-info"><p>Copyright 2017 Tech-Foundry. All rights reserved.</p></div></div>
+</div></div>
+</body>
+</html>

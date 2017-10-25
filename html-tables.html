@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tables</title>
+	<meta name="description" content="Tech-Foundry HTML CSS JavaScript Demonstration">
+	<meta name="keywords" content="tech-foundry, it school, html, css,javascript">
+	<link rel="stylesheet" type="text/css" href="css/template.css" media="screen">
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<script type="text/javascript" src="js/script.js"></script>
+</head>
+<body>
+<div id="wrapper"><div id="sheet">
+<div id="header">
+	<div id="logo"></div>
+	<h1 class="headline"><a href="index.html">HTML CSS JAVASCRIPT DEMONSTRATION</a></div>
+	
+	<div class="nav"><ul class="hmenu"><li><a href="index.html">home</a></li></ul></div>
+	<div class="clear"></div>
+	<!-- title content -->
+	<div id="title-content">
+	<h1>Tables</h1>
+<h4>HTML <b>tables</b> are still best known for being used and abused to <b>lay out</b> pages. We will come across how to layout a page without tables, in the CSS Tutorial. The correct use for tables is to do exactly what you would expect a table to do — to structure tabular data.</h4>
+	<!-- end title content -->
+	</div>
+	<div class="clear"></div>
+	<div id="main-content">
+	<!-- main content -->
+<p>There are a number of tags used in tables, and to fully get to grips with how they work is probably the most difficult area of this particular HTML section.</p>
+<p>Copy the following code into the body of your document and then we will go through what each tag is doing:</p>
+<pre class=" language-html"><code class="oldLang  language-html">
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>table</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>tr</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span><span class="token punctuation">&gt;</span></span>Row 1, cell 1<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span><span class="token punctuation">&gt;</span></span>Row 1, cell 2<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span><span class="token punctuation">&gt;</span></span>Row 1, cell 3<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>tr</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>tr</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span><span class="token punctuation">&gt;</span></span>Row 2, cell 1<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span><span class="token punctuation">&gt;</span></span>Row 2, cell 2<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span><span class="token punctuation">&gt;</span></span>Row 2, cell 3<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>tr</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>tr</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span><span class="token punctuation">&gt;</span></span>Row 3, cell 1<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span><span class="token punctuation">&gt;</span></span>Row 3, cell 2<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span><span class="token punctuation">&gt;</span></span>Row 3, cell 3<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>tr</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>tr</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span><span class="token punctuation">&gt;</span></span>Row 4, cell 1<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span><span class="token punctuation">&gt;</span></span>Row 4, cell 2<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span><span class="token punctuation">&gt;</span></span>Row 4, cell 3<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>tr</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>table</span><span class="token punctuation">&gt;</span></span>
+</code></pre>
+<p>The <b>table</b> element defines the table.</p>	
+<p>The tr element defines a table <b>row</b>.</p>
+<p>The td element defines a <b>data cell</b>. These must be enclosed in tr tags, as shown above.</p>
+<p>If you imagine a 3x4 table, which is 12 cells, there should be four tr elements to define the rows and three td elements within each of the rows, making a total of 12 td elements.</p>
+
+	
+<div class="clear"></div>
+<hr>
+	<h4>Related pages</h4>
+  <ul>
+  <li>Next page: <a href="html-forms.html">Forms</a></li>
+  <li>Previous page: <a href="html-images.html">Images</a></li>
+  </ul>
+
+	<!-- end main content -->
+</div>
+<div class="clear"></div>
+<div id="footer"><div id="footer-info"><p>Copyright 2017 Tech-Foundry. All rights reserved.</p></div></div>
+</div></div>
+</body>
+</html>

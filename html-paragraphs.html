@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Paragraphs</title>
+	<meta name="description" content="Tech-Foundry HTML CSS JavaScript Demonstration">
+	<meta name="keywords" content="tech-foundry, it school, html, css,javascript">
+	<link rel="stylesheet" type="text/css" href="css/template.css" media="screen">
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<script type="text/javascript" src="js/script.js"></script>
+</head>
+<body>
+<div id="wrapper"><div id="sheet">
+<div id="header">
+	<div id="logo"></div>
+	<h1 class="headline"><a href="index.html">HTML CSS JAVASCRIPT DEMONSTRATION</a></div>
+	
+	<div class="nav"><ul class="hmenu"><li><a href="index.html">home</a></li></ul></div>
+	<div class="clear"></div>
+	<!-- title content -->
+	<div id="title-content">
+	<h1>Paragraphs</h1>
+	<h4>Now that you have the basic structure of an HTML document, you can mess around with the content a bit.</h4>
+	<p>Whereas div elements can be used to contain sections, used primarily as scaffolding on which to hang CSS, they don’t hold a
+	</div>
+	<!-- end title content -->
+	<div class="clear"></div>
+	<div id="main-content">
+	<!-- main content -->
+
+	<p>Go back to your text editor and add another line to your page:</p>
+	<pre class=" language-html"><code class="oldLang  language-html">
+<span class="token doctype">&lt;!DOCTYPE html&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>title</span><span class="token punctuation">&gt;</span></span>My first web page<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>title</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">&gt;</span></span>
+    This is my first web page
+<strong>    How exciting</strong>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">&gt;</span></span>
+</code></pre>
+<p>Look at the document in your browser.</p>
+<p>You might have expected your document to appear as you typed it, on two lines, but instead you should see something like this:</p>
+<pre><code><p>This is my first web page How exciting.</p></code></pre>
+<p>This is because web browsers don’t usually take any notice of what line your code is on. It also doesn’t take any notice of spaces (you would get the same result if you typed “This is my first web page       How exciting”).</p>
+<p>If you want text to appear on different lines or, rather, if you intend there to be two distinct blocks of text (because, remember, HTML is about meaning, not presentation), you need to explicitly state that.</p>
+<p>Change your two lines of content so that they look like this:</p>
+<pre class=" language-html"><code class="oldLang  language-html">
+<span class="token tag"><span class="token tag"><span class="token punctuation"></span></span><strong><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></strong><span class="token punctuation"></span></span>This is my first web page<span class="token tag"><span class="token tag"><span class="token punctuation"></span></span><strong><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></strong><span class="token punctuation"></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation"></span></span><strong><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></strong><span class="token punctuation"></span></span>How exciting<span class="token tag"><span class="token tag"><span class="token punctuation"></span></span><strong><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></strong><span class="token punctuation"></span></span>
+</code></pre>
+
+<p>The p tag is used for paragraphs.</p>
+<p>Look at the results of this. The two lines will now appear on two lines because the browser recognizes them as separate paragraphs.</p>
+<p>Think of the HTML content as if it were a book - with paragraphs where appropriate.</p>
+<h2>Emphasis</h2>
+<p>You can emphasize text in a paragraph using em (emphasis) and strong (strong importance).</p>
+<pre class=" language-html"><code class="oldLang  language-html">
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span>Yes, that really <span class="token tag"><span class="token tag"><span class="token punctuation"></span></span></span><strong><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>em</span><span class="token punctuation">&gt;</span></span>is<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>em</span><span class="token punctuation">&gt;</span></span></strong><span class="token tag"><span class="token punctuation"></span></span> exciting. <span class="token tag"><span class="token tag"><span class="token punctuation"></span></span></span><strong><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>strong</span><span class="token punctuation">&gt;</span></span>Warning:<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>strong</span><span class="token punctuation">&gt;</span></span></strong><span class="token tag"><span class="token punctuation"></span></span> level of excitement may cause head to explode.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+</code></pre>
+
+<aside class="note">
+<p>Traditionally, browsers will display <a href="#" class="acode"><em>em</em></a> in italics and <a href="#" class="acode"><strong>strong</strong></a> in bold by default but they are not the same as <a href="#" class="acode"><code>i</code></a> and <a href="#" class="acode"><code>b</code></a> tags which (although they have been tenuously redefined in HTML5) have their origins in italic and bold - remember - HTML isn’t for presentation. If you want to emphasize something visually (making something italic, for example), you almost certainly want to give it general emphasis. You can’t speak in italics.</p>
+</aside>
+<h2>Line breaks</h2>
+<p>The line-break tag can also be used to separate lines like this:</p>
+
+<pre class=" language-html"><code class="oldLang  language-html">
+This is my first web page<span class="token tag"><span class="token tag"><span class="token punctuation"></span></span><strong><span class="token tag"><span class="token punctuation">&lt;</span>br</span><span class="token punctuation">&gt;</span></strong><span class="token punctuation"></span></span>
+How exciting
+</code></pre>
+<p>There’s no content involved in breaking lines so there is no closing tag.</p>
+<aside class="note warning">
+<p>It could be tempting to over-use line breaks and <a href="/references/html/tags/br/" class="acode"><code>br</code></a> shouldn’t be used if two blocks of text are intended to be separate from one another (because if that’s what you want to do you probably want the <a href="/references/html/tags/p/" class="acode"><code>p</code></a> tag).</p>
+</aside>
+
+
+<div class="clear"></div>
+<hr>
+	<h4>Related pages</h4>
+  <ul>
+  <li>Next page: <a href="html-headings.html">Headings</a></li>
+  <li>Previous page: <a href="html-sectioning.html">Sectioning</a></li>
+  </ul>
+
+	<!-- end main content -->
+</div>
+<div class="clear"></div>
+<div id="footer"><div id="footer-info"><p>Copyright 2017 Tech-Foundry. All rights reserved.</p></div></div>
+</div></div>
+</body>
+</html>
